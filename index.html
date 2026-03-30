@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Byzantine Legacy — a modern, mobile-friendly destination for Byzantine history, culture, and scholarship."
+    />
+    <title>The Byzantine Legacy | Modern Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#top" aria-label="The Byzantine Legacy home">
+          <span class="logo-mark">☩</span>
+          <span class="logo-text">The Byzantine Legacy</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="#explore">Explore</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#articles">Articles</a>
+          <a href="#subscribe">Subscribe</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Digital Museum • Living History</p>
+            <h1>Discover Byzantium in a modern, immersive experience.</h1>
+            <p class="hero-copy">
+              Explore the art, emperors, theology, and global influence of the Byzantine Empire through
+              beautifully structured content optimized for every screen.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#explore">Start Exploring</a>
+              <a class="btn btn-secondary" href="#articles">Read Latest</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Quick facts">
+            <h2>Byzantium at a Glance</h2>
+            <ul>
+              <li><strong>330 CE</strong> Constantinople founded by Constantine I</li>
+              <li><strong>527–565</strong> Reign of Emperor Justinian I</li>
+              <li><strong>1054</strong> The Great Schism</li>
+              <li><strong>1453</strong> Fall of Constantinople</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="explore" class="section">
+        <div class="container">
+          <h2>Explore Collections</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Imperial Power</h3>
+              <p>
+                Track the dynasties, political reforms, and military campaigns that shaped a millennium
+                of Eastern Roman rule.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Art & Architecture</h3>
+              <p>
+                From shimmering mosaics to domed cathedrals, study the visual language that defined
+                Byzantine sacred space.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Theological Legacy</h3>
+              <p>
+                Understand doctrinal debates, ecumenical councils, and the lasting spiritual influence of
+                Byzantium.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section section-alt">
+        <div class="container">
+          <h2>Key Moments Timeline</h2>
+          <ol class="timeline">
+            <li><span>330</span> Constantinople inaugurated as imperial capital.</li>
+            <li><span>537</span> Hagia Sophia completed under Justinian.</li>
+            <li><span>717</span> Arab siege of Constantinople repelled.</li>
+            <li><span>1204</span> Fourth Crusade captures Constantinople.</li>
+            <li><span>1453</span> Ottoman conquest marks end of empire.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="articles" class="section">
+        <div class="container">
+          <h2>Featured Reading</h2>
+          <div class="article-grid">
+            <article class="article-card">
+              <p class="tag">Empire</p>
+              <h3>Why Justinian's Reforms Still Matter</h3>
+              <p>How legal codification reshaped governance across Europe and beyond.</p>
+            </article>
+            <article class="article-card">
+              <p class="tag">Culture</p>
+              <h3>Icons, Mosaics, and Sacred Storytelling</h3>
+              <p>An introduction to Byzantine aesthetics and the spiritual function of art.</p>
+            </article>
+            <article class="article-card">
+              <p class="tag">Legacy</p>
+              <h3>Byzantium's Influence on the Modern World</h3>
+              <p>Tracing Byzantine ideas through religion, diplomacy, and urban life.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="section section-alt">
+        <div class="container subscribe-wrap">
+          <div>
+            <h2>Join the Legacy Letter</h2>
+            <p>Get monthly highlights featuring new essays, maps, and curated primary sources.</p>
+          </div>
+          <form class="subscribe-form" action="#" method="post">
+            <label for="email" class="sr-only">Email Address</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> The Byzantine Legacy — Modern Concept</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
