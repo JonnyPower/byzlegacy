@@ -328,3 +328,33 @@ h2 {
     grid-template-columns: 1fr auto;
   }
 }
+
+
+.section-copy {
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+.map-embed-wrap {
+  margin-top: 1rem;
+  border: 1px solid rgba(165, 180, 204, 0.25);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  background: rgba(11, 19, 37, 0.8);
+}
+
+.map-embed {
+  width: 100%;
+  min-height: 65vh;
+  border: 0;
+  display: block;
+}
+
+.map-note {
+  margin-top: 0.75rem;
+  color: var(--muted);
+}
+
+.map-note a {
+  color: var(--accent);
+}
