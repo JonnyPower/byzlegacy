@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Byzantine Legacy Maps — explore key Byzantine regions, routes, and cities in a mobile-friendly map experience."
+    />
+    <title>Maps | The Byzantine Legacy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html" aria-label="The Byzantine Legacy home">
+          <span class="logo-mark">☩</span>
+          <span class="logo-text">The Byzantine Legacy</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Toggle navigation</span>
+          ☰
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+          <a href="index.html#explore">Explore</a>
+          <a href="index.html#timeline">Timeline</a>
+          <a href="maps.html" aria-current="page">Maps</a>
+          <a href="index.html#articles">Articles</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero maps-hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Atlas • Geography • Empire</p>
+            <h1>Maps of the Byzantine World</h1>
+            <p class="hero-copy">
+              Browse key frontiers, provinces, and pilgrimage routes from late antiquity through the
+              empire's final centuries.
+            </p>
+            <a class="btn btn-primary" href="#map-library">Open Map Library</a>
+          </div>
+          <aside class="hero-card" aria-label="Map collection quick stats">
+            <h2>Collection Highlights</h2>
+            <ul>
+              <li><strong>4 map sets</strong> for learning and classroom use</li>
+              <li><strong>Mobile-ready</strong> card layout with quick summaries</li>
+              <li><strong>Chronological range</strong> from 330 to 1453 CE</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="map-library" class="section">
+        <div class="container">
+          <h2>Map Library</h2>
+          <div class="map-grid">
+            <article class="map-card">
+              <div class="map-card__media" aria-hidden="true">Eastern Roman Core</div>
+              <div class="map-card__content">
+                <h3>Constantinople & The Straits</h3>
+                <p>
+                  Understand the strategic geography of Constantinople, the Bosporus, and imperial sea
+                  control.
+                </p>
+                <span class="tag">Capital Region</span>
+              </div>
+            </article>
+
+            <article class="map-card">
+              <div class="map-card__media" aria-hidden="true">Mediterranean Theater</div>
+              <div class="map-card__content">
+                <h3>Justinian's Reconquests</h3>
+                <p>
+                  Visualize campaign regions across North Africa, Italy, and southern Iberia in the sixth
+                  century.
+                </p>
+                <span class="tag">6th Century</span>
+              </div>
+            </article>
+
+            <article class="map-card">
+              <div class="map-card__media" aria-hidden="true">Anatolian Frontier</div>
+              <div class="map-card__content">
+                <h3>Thematic System in Asia Minor</h3>
+                <p>
+                  Review military-administrative districts that formed Byzantium's defensive backbone.
+                </p>
+                <span class="tag">Middle Byzantine</span>
+              </div>
+            </article>
+
+            <article class="map-card">
+              <div class="map-card__media" aria-hidden="true">Late Byzantine Sphere</div>
+              <div class="map-card__content">
+                <h3>Empire on the Eve of 1453</h3>
+                <p>
+                  Compare territorial contraction and regional holdings in the final Palaiologan period.
+                </p>
+                <span class="tag">Late Period</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> The Byzantine Legacy — Modern Concept</p>
+        <a href="index.html">Home</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
