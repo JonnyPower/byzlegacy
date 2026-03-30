@@ -110,22 +110,27 @@
         <div class="container">
           <h2>Historical Maps</h2>
           <p class="section-copy">
-            This view embeds the original maps experience from The Byzantine Legacy so you can explore the
-            same underlying map layers and data in this modern layout.
+            We now embed map datasets directly (instead of framing the original site) so mobile users can
+            interact with each map cleanly.
           </p>
-          <div class="map-embed-wrap">
-            <iframe
-              class="map-embed"
-              src="https://www.thebyzantinelegacy.com/maps"
-              title="The Byzantine Legacy maps"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+
+          <div class="map-panel">
+            <label class="map-label" for="map-picker">Choose map</label>
+            <select id="map-picker" class="map-picker" aria-label="Choose a historical map"></select>
+
+            <div class="map-embed-wrap">
+              <iframe
+                id="map-embed"
+                class="map-embed"
+                title="Byzantine map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
-          <p class="map-note">
-            If the embed is blocked by your browser, open the maps directly:
-            <a href="https://www.thebyzantinelegacy.com/maps" target="_blank" rel="noopener noreferrer">thebyzantinelegacy.com/maps</a>
-          </p>
+
+          <p id="map-source" class="map-note"></p>
         </div>
       </section>
 
