@@ -335,8 +335,31 @@ h2 {
   max-width: 72ch;
 }
 
-.map-embed-wrap {
+
+.map-panel {
   margin-top: 1rem;
+}
+
+.map-label {
+  display: inline-block;
+  font-size: 0.92rem;
+  color: var(--muted);
+  margin-bottom: 0.45rem;
+}
+
+.map-picker {
+  width: 100%;
+  max-width: 28rem;
+  background: rgba(11, 19, 37, 0.8);
+  color: var(--text);
+  border: 1px solid rgba(165, 180, 204, 0.35);
+  border-radius: 0.55rem;
+  height: 2.6rem;
+  padding: 0 0.75rem;
+}
+
+.map-embed-wrap {
+  margin-top: 0.85rem;
   border: 1px solid rgba(165, 180, 204, 0.25);
   border-radius: 0.85rem;
   overflow: hidden;
